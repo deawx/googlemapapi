@@ -35,16 +35,3 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`)
 );
 
-/* Store categories table */
-CREATE TABLE `categories` (
-`id` int(11) NOT NULL auto_increment,
-`cat_name` varchar(100) character set utf8 collate utf8_bin default NULL,
-`cat_icon` varchar(255) default NULL,
-`cat_parent_id` int(11) default NULL,
-`cat_free_flag` int(1) default NULL,
-PRIMARY KEY (id)
-);
-
-/* insert admin user */
-/* Username: admin, Password: password */
-insert  into `users`(`username`,`password`) values ('admin','e64a4f78be2256a38de080744dd5b117');
